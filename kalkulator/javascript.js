@@ -1,0 +1,29 @@
+// alert('ajkajkajk');
+function insertData(i){
+    // alert('gsgshsh');
+    document.form.view.value = document.form.view.value + i;
+}
+function clearData(){
+    const i = document.forms.view.value;
+    if (i == "") {
+        alert("silakan isi angka terlebih dahulu!");
+    }else{
+       document.form.view.value =""; 
+    }
+}
+function aqual(){
+    const i = document.form.view.value;
+    if (i == "") {
+        alert("silakan isi angka terlebih dahulu!");
+    }else{
+         document.form.view.value = eval(i);
+    }
+}
+function deleteData(){
+    const i =document.form.view.value;
+    if(i == ""){
+        alert('silakan isi angka terlebih dahulu')
+    }else{
+        document.form.view.value = i.subtring(0, i.length - 1);
+    }
+}
